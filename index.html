@@ -1,0 +1,264 @@
+<html lang="it"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giappone: Un’Eredità Millenaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f5f2ed; /* Un crema moderno e riposante */
+            --text-main: #1a1c1e; /* Quasi nero, molto leggibile */
+            --accent-zen: #b35a44; /* Terracotta opaco, molto elegante */
+            --secondary-bg: #e9e5de; /* Grigio-crema per le schede */
+            --white-pure: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Tipografia Evoluta --- */
+        h1, h2, h3 { font-family: 'Bodoni Moda', serif; font-weight: 700; letter-spacing: -1px; }
+        
+        /* Descrizioni grandi e leggibili come richiesto */
+        p { 
+            font-size: 1.25rem; 
+            margin-bottom: 25px; 
+            text-align: left; 
+            color: var(--text-main); 
+            font-weight: 300;
+        }
+
+        .label { 
+            text-transform: uppercase; 
+            letter-spacing: 5px; 
+            font-size: 0.85rem; 
+            color: var(--accent-zen); 
+            font-weight: 600; 
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* --- Hero Immersiva --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            color: var(--white-pure);
+            position: relative;
+            text-align: center;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        .hero-content { z-index: 2; max-width: 1000px; padding: 40px; }
+        .hero h1 { font-size: clamp(3.5rem, 12vw, 8rem); margin-bottom: 20px; line-height: 0.9; }
+        .hero p { text-align: center; color: var(--bg-color); font-style: italic; font-size: 1.6rem; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px; }
+
+        /* --- Layout Container --- */
+        .container { max-width: 1300px; margin: 0 auto; padding: 120px 40px; }
+        
+        .section-header { text-align: left; margin-bottom: 80px; }
+        .section-header h2 { font-size: clamp(3rem, 6vw, 5rem); color: var(--text-main); }
+
+        .image-frame {
+            width: 100%;
+            height: 700px;
+            background: var(--secondary-bg);
+            margin: 50px 0;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .image-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .image-frame:hover img { transform: scale(1.03); }
+
+        /* --- Descrizioni Potenziate --- */
+        .description-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .text-bold { font-weight: 600; color: var(--accent-zen); }
+
+        .info-card {
+            background: var(--secondary-bg);
+            padding: 50px;
+            position: sticky;
+            top: 50px;
+            border-radius: 4px;
+        }
+
+        .info-card h4 { 
+            font-family: 'Inter'; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            font-size: 1rem; 
+            margin-bottom: 20px; 
+            color: var(--accent-zen); 
+        }
+
+        .info-card ul { list-style: none; }
+        .info-card li { 
+            padding: 15px 0; 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* --- Footer Sophisticated --- */
+        footer {
+            background: var(--text-main);
+            color: var(--bg-color);
+            padding: 120px 40px;
+            text-align: left;
+        }
+
+        .footer-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .footer-logo h2 { font-size: 3rem; }
+
+        @media (max-width: 1024px) {
+            .description-grid { grid-template-columns: 1fr; }
+            .image-frame { height: 450px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <img src="https://wallpaperaccess.com/full/1192044.jpg" alt="Japan Aesthetics">
+        <div class="hero-content">
+            <span class="label" style="color: var(--bg-color); opacity: 0.8;">Presentazione</span>
+            <h1>IL GIAPPONE <br></h1>
+            <p>Scoprire i vari siti del Giappone</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="section-header">
+            <span class="label">§§§§§§§§</span>
+            <h2>Non solo mega schermi<br></h2>
+            <div style="width: 80px; height: 3px; background: var(--accent-zen); margin-top: 30px;"></div>
+        </div>
+        <p style="font-size: 1.8rem; line-height: 1.4; max-width: 900px;">Quando pensiamo al<span class="text-bold"> Giappone</span>ci vengono sempre in mente le grandi città futurische con i megaschermi, serie TV, anime, manga.... ma il paese non si ferma a questo. Ha ben 26 siti UNESCO e io ne ho scelti tre, a parer mio migliori, e vi spieghero perché sono un'ottima meta turistica</p>
+    </section>
+
+    <section class="container">
+        <span class="label">SIto 1</span>
+        <h2>Shirakami Sanchi: <br> L'Eternità del Bosco</h2>
+        
+        <div class="image-frame">
+            <img src="https://th.bing.com/th/id/R.5bd8dfdc7b00a04ef60deb4c5f45366c?rik=ucMJfYKjo1cJ0A&amp;pid=ImgRaw&amp;r=0" alt="Shirakami Sanchi">
+        </div>
+
+        <div class="description-grid">
+            <div class="main-text">
+                <p>Nella parte settentrionale dell'isola di Honshu, si trova la catena di<span class="text-bold"> Shirakami-Sanchi</span> che custodisce l'ultima grande foresta vergine di faggi dell'Asia Orientale, un ecosistema che si è mantenuto pressoché intatto per oltre ottomila anni.
+                </p>
+                <p>
+                    A differenza delle foreste sfruttate dall'uomo, qui la natura segue i suoi cicli millenari. Possiamo trovare anche  specie protette come il serow giapponese. È un luogo dove il tempo sembra essersi fermato, offrendo una visione rara di come appariva l'arcipelago giapponese prima dell'antropizzazione.
+                </p>
+            </div>
+            <aside class="info-card">
+                <h4>Dati</h4>
+                <ul>
+                    <li><span>Area:</span> 16.971 ettari</li>
+                    
+                    <li><span>Status:</span> UNESCO dal 1993</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <section class="container">
+        <span class="label">Sito 2</span>
+        <h2>Nagasaki: <br>Kakure Kirishitan</h2>
+        
+        <div class="image-frame">
+            <img src="https://th.bing.com/th/id/R.acdd0aae5bf9ac4fcc5ca47b616509c0?rik=Y8lQG7KpXg5w0w&amp;pid=ImgRaw&amp;r=0" alt="Nagasaki Christian Sites">
+        </div>
+
+        <div class="description-grid">
+            <div class="main-text">
+                <p>In un periodo di feroce isolazionismo e persecuzione religiosa i <span class="text-bold">Cristiani Nascosti</span> (Kakure Kirishitan) mantennero viva la propria di nascosto per oltre due secoli, senza clero e con l'uso di simboli criptici.
+                </p>
+                <p>
+                    I villaggi nelle Isole Goto sono testimoni di questa resistenza culturale con le piccole chiese, spesso integrate armoniosamente nel paesaggio rurale.
+                </p>
+            </div>
+            <aside class="info-card">
+                <h4>Analisi Storica</h4>
+                <ul>
+                    <li><span>Periodo:</span> 1614 — 1873</li>
+                    
+                    
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <section class="container">
+        <span class="label">Sito 3</span>
+        <h2>Monte Fuji: <br>La divinità giapponese incarnata</h2>
+        
+        <div class="image-frame">
+            <img src="https://wallpaperaccess.com/full/48754.jpg" alt="Fujisan">
+        </div>
+
+        <div class="description-grid">
+            <div class="main-text">
+                <p>
+                    Il <span class="text-bold">Monte Fuji</span> (Fujisan) è un vulcano alto ben 3.776 metri e non è solo la vetta più alta del Giappone, ma un "Kami" (divinità) incarnato. Ll pellegrinaggio sulle sue pendici è diventato una pratica di purificazione. La sua forma conica, quasi soprannaturale, ha ispirato generazioni di artisti.
+                <img src="https://i2.wp.com/skdesu.com/wp-content/uploads/2020/09/grande-onda-de-kanagawa.jpg" alt=""></p>
+                
+            </div>
+            <aside class="info-card">
+                <h4>Morfologia</h4>
+                <ul>
+                    <li><span>Altitudine:</span> 3.776 m</li>
+                    <li><span>Tipo:</span> Stratovulcano</li>
+                    <li><span>Religione:</span> Scintoista / Buddista</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <span class="label" style="color: var(--accent-zen);">Fine della Presentazione</span>
+                <h2> Giappone</h2>
+            </div>
+            <div class="footer-info">
+                <p style="font-size: 0.9rem; color: #888; text-align: right;">Davide Lamberti<br>3C 2025/2026</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
